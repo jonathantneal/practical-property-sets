@@ -1,0 +1,52 @@
+/* Normalize Atomic Classes
+/* ========================================================================== */
+
+@import "./normalize";
+
+.c-normalize-a {
+	@apply --c-normalize-a-styles;
+}
+
+.c-normalize-abbr-title {
+	@apply --c-normalize-abbr-title-styles;
+}
+
+.c-normalize-button {
+	@apply --c-normalize-button-styles;
+}
+
+.c-normalize-h1 {
+	@apply --c-normalize-h1-styles;
+}
+
+.c-normalize-html {
+	@apply --c-normalize-html-styles;
+}
+
+.c-normalize-input {
+	@apply --c-normalize-input-styles;
+}
+
+.c-normalize-input-type-search {
+	@apply --c-normalize-input-type-search-styles;
+}
+
+.c-normalize-pre {
+	@apply --c-normalize-pre-styles;
+}
+
+.c-normalize-select {
+	@apply --c-normalize-select-styles;
+}
+
+.c-normalize-small {
+	@apply --c-normalize-small-styles;
+}
+
+.c-normalize-strong {
+	@apply --c-normalize-strong-styles;
+}
+
+.c-normalize-textarea {
+	@apply --c-normalize-textarea-styles;
+}

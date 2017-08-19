@@ -1,0 +1,10 @@
+:root {
+	/* Border Box Property Sets
+	/* ====================================================================== */
+
+	--c-border-box-styles: {
+		&, &::before, &::after {
+			box-sizing: border-box;
+		}
+	};
+}

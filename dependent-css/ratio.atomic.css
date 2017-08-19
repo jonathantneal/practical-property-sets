@@ -1,0 +1,38 @@
+/* Ratio Atomic Classes
+/* ========================================================================== */
+
+@import "./ratio";
+
+.c-ratio {
+	@apply --c-ratio-styles;
+}
+
+.c-ratio-1x1, .c-ratio-square {
+	@apply --c-ratio-styles;
+	@apply --c-ratio-1x1-styles;
+}
+
+.c-ratio-3x2 {
+	@apply --c-ratio-styles;
+	@apply --c-ratio-3x2-styles;
+}
+
+.c-ratio-4x3, .c-ratio-tv {
+	@apply --c-ratio-styles;
+	@apply --c-ratio-4x3-styles;
+}
+
+.c-ratio-16x9, .c-ratio-wide {
+	@apply --c-ratio-styles;
+	@apply --c-ratio-16x9-styles;
+}
+
+.c-ratio-golden {
+	@apply --c-ratio-styles;
+	@apply --c-ratio-golden-styles;
+}
+
+.c-ratio-cinema {
+	@apply --c-ratio-styles;
+	@apply --c-ratio-cinema-styles;
+}

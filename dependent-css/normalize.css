@@ -1,0 +1,85 @@
+:root {
+	/* Normalize Property Sets
+	/* ====================================================================== */
+
+	--c-normalize-a-styles: {
+		background-color: transparent;
+		-webkit-text-decoration-skip: objects; /* stylelint-disable-line property-no-vendor-prefix */
+	};
+
+	--c-normalize-abbr-title-styles: {
+		border-block-end: none;
+		text-decoration: underline;
+		text-decoration: underline dotted;
+	};
+
+	--c-normalize-button-styles: {
+		&::-moz-focus-inner {
+			border-style: none;
+			outline: 1px dotted ButtonText;
+			padding: 0;
+		}
+
+		&:-moz-focusring {
+			outline: 1px dotted ButtonText;
+		}
+
+		-webkit-appearance: button; /* stylelint-disable-line property-no-vendor-prefix */
+		margin: 0;
+		overflow: visible;
+		text-transform: none;
+	};
+
+	--c-normalize-h1-styles: {
+		font-size: 2em;
+		margin: .67em 0;
+	};
+
+	--c-normalize-html-styles: {
+		line-height: 1.15;
+		-ms-text-size-adjust: 100%; /* stylelint-disable-line property-no-vendor-prefix */
+		-webkit-text-size-adjust: 100%; /* stylelint-disable-line property-no-vendor-prefix */
+	};
+
+	--c-normalize-input-styles: {
+		margin: 0;
+		overflow: visible;
+	};
+
+	--c-normalize-input-type-search-styles: {
+		&::-ms-clear {
+			display: none;
+		}
+
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-decoration {
+			-webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+		}
+
+		-webkit-appearance: textfield; /* stylelint-disable-line property-no-vendor-prefix */
+		margin: 0;
+		outline-offset: -2px;
+		overflow: visible;
+	};
+
+	--c-normalize-pre-styles: {
+		font-family: monospace, monospace; /* stylelint-disable-line font-family-no-duplicate-names */
+		font-size: 1em;
+	};
+
+	--c-normalize-select-styles: {
+		text-transform: none;
+	};
+
+	--c-normalize-small-styles: {
+		font-size: 80%;
+	};
+
+	--c-normalize-strong-styles: {
+		font-weight: bolder; /* stylelint-disable-line font-weight-notation */
+	};
+
+	--c-normalize-textarea-styles: {
+		overflow: auto;
+	};
+}

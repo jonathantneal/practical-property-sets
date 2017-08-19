@@ -1,0 +1,109 @@
+/* stylelint-disable declaration-colon-space-after, function-calc-no-unspaced-operator */
+
+:root {
+	/* Ratio Properties
+	/* ====================================================================== */
+
+	--c-ratio-1x1:  1;
+	--c-ratio-3x2:  calc(2 / 3);
+	--c-ratio-4x3:  calc(3 / 4);
+	--c-ratio-16x9: calc(9 / 16);
+
+	/* Ratio (Percentage) Properties
+	/* ====================================================================== */
+
+	--c-ratio-1x1-p:  calc(var(--c-ratio-1x1)  * 100%);
+	--c-ratio-3x2-p:  calc(var(--c-ratio-3x2)  * 100%);
+	--c-ratio-4x3-p:  calc(var(--c-ratio-4x3)  * 100%);
+	--c-ratio-16x9-p: calc(var(--c-ratio-16x9) * 100%);
+
+	/* Named Ratio Properties
+	/* ====================================================================== */
+
+	--c-ratio-cinema: calc(1 / 2.39);
+	--c-ratio-golden: calc(1 / 1.618);
+	--c-ratio-square: var(--c-ratio-1x1);
+	--c-ratio-tv:     var(--c-ratio-4x3);
+	--c-ratio-wide:   var(--c-ratio-16x9);
+
+	/* Named Ratio (Percentage) Properties
+	/* ====================================================================== */
+
+	--c-ratio-cinema-p: calc(var(--c-ratio-cinema) * 100%);
+	--c-ratio-golden-p: calc(var(--c-ratio-golden) * 100%);
+	--c-ratio-square-p: var(--c-ratio-1x1-p);
+	--c-ratio-tv-p:     var(--c-ratio-4x3-p);
+	--c-ratio-wide-p:   var(--c-ratio-16x9-p);
+
+	/* Ratio Property Sets
+	/* ====================================================================== */
+
+	--c-ratio-styles: {
+		display: block;
+		position: relative;
+
+		&::before {
+			content: "";
+			display: block;
+		}
+
+		& > :first-child {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	};
+
+	--c-ratio-1x1-styles: {
+		&::before {
+			padding-block-start: var(--c-ratio-1x1-p);
+		}
+	};
+
+	--c-ratio-3x2-styles: {
+		&::before {
+			padding-block-start: var(--c-ratio-3x2-p);
+		}
+	};
+
+	--c-ratio-4x3-styles: {
+		&::before {
+			padding-block-start: var(--c-ratio-4x3-p);
+		}
+	};
+
+	--c-ratio-16x9-styles: {
+		&::before {
+			padding-block-start: var(--c-ratio-16x9-p);
+		}
+	};
+
+	/* Named Ratio (Percentage) Property Sets
+	/* ====================================================================== */
+
+	--c-ratio-cinema-styles: {
+		&::before {
+			padding-block-start: var(--c-ratio-cinema-p);
+		}
+	};
+
+	--c-ratio-golden-styles: {
+		&::before {
+			padding-block-start: var(--c-ratio-golden-p);
+		}
+	};
+
+	--c-ratio-square-styles: {
+		@apply --c-ratio-1x1-styles;
+	};
+
+	--c-ratio-tv-styles: {
+		@apply --c-ratio-tv-styles;
+	};
+
+	--c-ratio-wide-styles: {
+		@apply --c-ratio-wide-styles;
+	};
+}

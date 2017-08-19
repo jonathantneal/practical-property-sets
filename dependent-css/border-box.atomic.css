@@ -1,0 +1,14 @@
+/* Border Box Atomic Classes
+/* ========================================================================== */
+
+@import "./border-box";
+
+.c-border-box, .c-border-box-all {
+	@apply --c-border-box-styles;
+}
+
+.c-border-box-all {
+	& * {
+		@apply --c-border-box-styles;
+	}
+}
